@@ -11,15 +11,14 @@ faltas = int(input("Digite o seu número de faltas no semestre:\n"))
 
 media = (nota_1 + nota_2)/2
 
-if (media > 7.0 and faltas < 3):
+if (media >= 7.0 and faltas <= 3):
     print(nome, ", você foi aprovado por média.")
     
-if (media > 7.0 and faltas > 3):
+if (media >= 7.0 and faltas > 3):
     print(nome, ", você foi reprovado por falta.")
 
-if (media < 7.0 and faltas < 3):
+if (media < 7.0 and faltas <= 3):
     print(nome, ", você foi reprovado por média.")
 
 if (media < 7.0 and faltas > 3):
     print(nome, ", você foi reprovado por média e por falta.")
-
